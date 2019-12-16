@@ -7,10 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import com.example.lawyer.Fragments.Affaire.Affaire;
-import com.example.lawyer.Fragments.AffaireFragment;
-import com.example.lawyer.Fragments.Appointment_Fragment;
 import com.example.lawyer.Fragments.Book_fragment;
 import com.example.lawyer.Fragments.HomeFragment;
+import com.example.lawyer.Fragments.Mission.Mission;
 import com.example.lawyer.Fragments.lawyers_Fragment;
 
 
@@ -47,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements
 
 
             case R.id.navigation_profile3:
-                fragment = new Appointment_Fragment();
+                fragment = new Mission();
                 break;
 
             case R.id.navigation_profile4:

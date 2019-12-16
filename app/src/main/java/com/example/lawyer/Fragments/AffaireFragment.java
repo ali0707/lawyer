@@ -32,8 +32,6 @@ public class AffaireFragment extends Fragment {
         items = new ArrayList<>();
         items.add("First CardView Item");
         items.add("Second CardView Item");
-
-
         recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         adapter = new Adapter(getContext(),items);
@@ -51,9 +49,6 @@ public class AffaireFragment extends Fragment {
                         .commit();
             }
         });
-
-
-        // Inflate the layout for this fragment
         return view;
 
 

@@ -101,9 +101,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:layout_weight="1"
-
               android:orientation="vertical">
-
               <Spinner
                   android:id="@+id/spinner1"
                   android:layout_width="160.22dp"
@@ -111,7 +109,6 @@
                   android:layout_marginLeft="10dp"
                   android:layout_marginTop="10dp"
                   />
-
               <Spinner
                   android:id="@+id/spinner3"
                   android:layout_width="160.22dp"
@@ -162,7 +159,6 @@
           android:textColor="@color/colortext"
           android:text="طرف الضد"
           />
-
       <Button
           android:id="@+id/button2"
           android:layout_width="match_parent"

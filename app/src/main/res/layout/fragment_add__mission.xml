@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Mission.Add_Mission">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/back">
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="12dp"
+            android:drawableRight="@drawable/add"
+            android:background="@drawable/ic_textinput"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="عنوان"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.609"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/colortext"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/deg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:drawableLeft="@drawable/more"
+            android:drawableRight="@drawable/ic_deg"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/ic_textinput"
+
+            android:hint="تاريخ المهمة"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:textColor="@color/colortext"
+            />
+        <EditText
+            android:id="@+id/deg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:drawableLeft="@drawable/more"
+            android:drawableRight="@drawable/ic_deg"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/ic_textinput"
+
+            android:hint="الجهة المعنية"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:textColor="@color/colortext"
+            />
+        <EditText
+            android:id="@+id/deg3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:drawableLeft="@drawable/more"
+            android:drawableRight="@drawable/ic_deg"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/ic_textinput"
+
+            android:hint="عنوان الجهة"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:textColor="@color/colortext"
+            />
+        <EditText
+            android:id="@+id/deg4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:drawableLeft="@drawable/more"
+            android:drawableRight="@drawable/ic_deg"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/ic_textinput"
+
+            android:hint="القضية"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:textColor="@color/colortext"
+            /><EditText
+            android:id="@+id/deg5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:drawableLeft="@drawable/more"
+            android:drawableRight="@drawable/ic_deg"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/ic_textinput"
+
+             android:hint="نوع المهمة"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:textColor="@color/colortext"
+            /><EditText
+            android:id="@+id/deg6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:drawableLeft="@drawable/more"
+            android:drawableRight="@drawable/ic_deg"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/ic_textinput"
+
+            android:hint="الأعمال المطلوبة"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:textColor="@color/colortext"
+            />
+
+        <EditText
+            android:id="@+id/deg7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:drawableLeft="@drawable/more"
+            android:drawableRight="@drawable/ic_deg"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/ic_textinput"
+            android:hint="ملاحظات"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:textColor="@color/colortext"
+            />
+
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="51.5dp"
+            android:layout_marginEnd="51.5dp"
+            android:layout_marginTop="57.5dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bgr_btn"
+            android:text="إضافة"
+            android:textColor="@color/yellow"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+</ScrollView>
