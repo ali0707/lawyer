@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_profile1"
+        android:icon="@drawable/ic_cloud_circle"
+        android:title="@string/nav_home" />
+
+    <item
+        android:id="@+id/navigation_profile2"
+        android:icon="@drawable/ic_gavel"
+        android:title="@string/nav_home" />
+
+    <item
+        android:id="@+id/navigation_profile3"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_home" />
+
+    <item
+        android:id="@+id/navigation_profile4"
+        android:icon="@drawable/ic_settings_phone"
+        android:title="@string/nav_home" />
+    <item
+        android:id="@+id/navigation_profile5"
+        android:icon="@drawable/ic_library_books"
+        android:title="@string/nav_home" />
+
+</menu>

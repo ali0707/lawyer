@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lawyer</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_two">Home</string>
+    <string name="nav_user">User</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="lorem_ipsum_long">Lorem ipsum dolor sit amet, sagittis tellus pharetra in lectus, pretium pellentesque ut donec, venenatis vehicula odio, nunc volutpat duis bibendum tempus. Amet non. Sem consectetuer aliquam, quis quis quis turpis quos, vehicula odio nascetur. Porttitor lorem, id pulvinar viverra ipsum libero, suspendisse nulla id luctus tempor.</string>
+
+</resources>

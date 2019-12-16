@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.detail_affaire">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/back"
+        >
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:drawableLeft="@drawable/more"
+            android:drawableRight="@drawable/sujet"
+            android:textSize="25dp"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+
+            android:text="معلومات"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="339dp"
+            android:layout_margin="12dp"
+            android:background="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            tools:ignore="MissingConstraints">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="25dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginStart="9dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_gavel"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/textTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="عدد القضية"
+                    android:textColor="@android:color/black"
+
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView4"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="19dp"
+                    app:layout_constraintHorizontal_bias="0.908"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="3dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:paddingStart="22dp"
+                    android:text="0781165477"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.807"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+
+            </android.support.constraint.ConstraintLayout>
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:color="#66FF0000"
+                android:alpha="0"
+                android:id="@+id/rt"
+                />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/deg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:drawableLeft="@drawable/more"
+            android:drawableRight="@drawable/ic_deg"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:textSize="25dp"
+            android:inputType="textPersonName"
+            android:text="الجلسات"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/button3"
+            android:layout_marginLeft="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:textColor="@color/colortext"
+            android:text="اظهار الكل" />
+
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_margin="12dp"
+            android:background="@color/white"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            tools:ignore="MissingConstraints">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+
+                <ImageView
+                    android:id="@+id/imagejalsa"
+                    android:layout_width="25dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginStart="9dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_gavel"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/titrejalsa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="عدد القضية"
+                    android:textColor="@android:color/black"
+
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/imagejalsa"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="19dp"
+                    app:layout_constraintHorizontal_bias="0.908"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="3dp" />
+
+                <TextView
+                    android:id="@+id/textjalsa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:paddingStart="22dp"
+                    android:text="0781165477"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.792"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/titrejalsa" />
+
+
+            </android.support.constraint.ConstraintLayout>
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:color="#66FF0000"
+                android:alpha="0"
+                android:id="@+id/btnjalsa"
+                />
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/mahama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:drawableLeft="@drawable/more"
+            android:drawableRight="@drawable/ic_deg"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:textSize="25dp"
+            android:inputType="textPersonName"
+            android:text="المهام"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:textColor="@color/colorPrimary"
+            />
+        <TextView
+            android:id="@+id/button4"
+            android:layout_marginLeft="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:textColor="@color/colortext"
+            android:text="اظهار الكل" />
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_margin="12dp"
+            android:background="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            tools:ignore="MissingConstraints">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+
+                <ImageView
+                    android:id="@+id/imagemahama"
+                    android:layout_width="25dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginStart="9dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_gavel"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/titremahama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="عدد القضية"
+                    android:textColor="@android:color/black"
+
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/imagemahama"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="19dp"
+                    app:layout_constraintHorizontal_bias="0.908"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="3dp" />
+
+                <TextView
+                    android:id="@+id/textmahama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:paddingStart="22dp"
+                    android:text="0781165477"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.792"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/titremahama" />
+
+                <Button
+
+                    android:id="@+id/btnmahama"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0"
+                    android:color="#66FF0000"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="0dp" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:id="@+id/mataleb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:drawableLeft="@drawable/more"
+            android:drawableRight="@drawable/ic_deg"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:textSize="25dp"
+            android:inputType="textPersonName"
+            android:text="المطالب"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/buttonmataleb"
+            android:layout_marginLeft="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:textColor="@color/colortext"
+            android:text="اظهار الكل" />
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_margin="12dp"
+            android:background="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            tools:ignore="MissingConstraints">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+
+                <ImageView
+                    android:id="@+id/imagemataleb"
+                    android:layout_width="25dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginStart="9dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_gavel"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/titremataleb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="عدد القضية"
+                    android:textColor="@android:color/black"
+
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/imagemataleb"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="19dp"
+                    app:layout_constraintHorizontal_bias="0.908"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="3dp" />
+
+                <TextView
+                    android:id="@+id/textmataleb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:paddingStart="22dp"
+                    android:text="0781165477"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.792"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/titremataleb" />
+
+                <Button
+
+                    android:id="@+id/btmataleb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0"
+                    android:color="#66FF0000"
+                    tools:layout_editor_absoluteX="1dp"
+                    tools:layout_editor_absoluteY="0dp" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="51.5dp"
+            android:layout_marginEnd="51.5dp"
+            android:layout_marginTop="57.5dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bgr_btn"
+            android:text="إضافة"
+            android:textColor="@color/yellow"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:paddingLeft="338dp"
+        >
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <com.robertlevonyan.views.customfloatingactionbutton.FloatingActionLayout
+                android:id="@+id/customFABL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+
+                android:src="@drawable/fab_square_bg"
+                app:borderWidth="0dp"
+                >
+            </com.robertlevonyan.views.customfloatingactionbutton.FloatingActionLayout>
+            <com.robertlevonyan.views.customfloatingactionbutton.FloatingActionButton
+                android:id="@+id/custom1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:fabColor="@color/colorPrimary"
+                app:fab
+                app:fabElevation="@dimen/fab_rounded_square_shadow_translation"
+                />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
