@@ -467,7 +467,6 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
                 app:fabColor="@color/colorPrimary"
-                app:fab
                 app:fabElevation="@dimen/fab_rounded_square_shadow_translation"
                 />
 
