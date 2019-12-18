@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.detail_affaire">
 
-    <com.melnykov.fab.ObservableScrollView
+    <ScrollView
         android:id="@+id/scroll_view1"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -48,6 +48,7 @@
             android:background="@color/white"
             app:cardCornerRadius="20dp"
             app:cardElevation="8dp"
+
             android:clickable="true"
             tools:ignore="MissingConstraints">
 
@@ -430,46 +431,59 @@
             app:layout_constraintStart_toStartOf="parent" />
 
     </LinearLayout>
-    </com.melnykov.fab.ObservableScrollView>
+    </ScrollView>
 
-    <RelativeLayout
-        android:id="@+id/list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingBottom="16dp"
-        android:paddingTop="16dp"
-        android:paddingLeft="338dp"
+    <LinearLayout
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        android:radius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center_horizontal"
         >
-        <android.support.design.widget.CoordinatorLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_cecrcle1"
 
+            android:id="@+id/fabThree"
+            android:layout_margin="4dp"
+            tools:ignore="VectorDrawableCompat" />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:id="@+id/fabTwo"
+            app:srcCompat="@drawable/ic_cecrcle1"
 
-            <com.robertlevonyan.views.customfloatingactionbutton.FloatingActionLayout
-                android:id="@+id/fab"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                app:fabColor="@color/colorPrimary"
-                app:fabAnimateMenu="true"
-                app:fabMenuGravity="top"
-                app:fabType="circle"
-                app:fabElevation="@dimen/fab_rounded_square_shadow_translation">
+            android:layout_margin="4dp"
+            tools:ignore="VectorDrawableCompat" />
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:id="@+id/fabOne"
+            app:srcCompat="@drawable/ic_cecrcle1"
 
-                <com.robertlevonyan.views.customfloatingactionbutton.FloatingActionButton
-                    android:id="@+id/fab1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|end"
-                    app:fabColor="@color/colorPrimary"
-                    app:fabType="roundedSquare"
-                    />
-            </com.robertlevonyan.views.customfloatingactionbutton.FloatingActionLayout>
+            android:layout_margin="4dp"
+            tools:ignore="VectorDrawableCompat" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:layout_margin="4dp"
+            app:srcCompat="@drawable/ic_add"
 
-        </android.support.design.widget.CoordinatorLayout>
-    </RelativeLayout>
-</RelativeLayout>
+            />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
 
 
 

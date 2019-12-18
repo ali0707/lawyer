@@ -4,7 +4,6 @@
     android:height="22dp"
     android:viewportWidth="22"
     android:viewportHeight="22">
-
     <path
         android:pathData="M 0 0 H 22 V 22 H 0 V 0 Z" />
     <path

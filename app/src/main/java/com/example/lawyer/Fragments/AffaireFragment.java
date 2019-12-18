@@ -24,6 +24,7 @@ public class AffaireFragment extends Fragment {
 
     Button b1;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {

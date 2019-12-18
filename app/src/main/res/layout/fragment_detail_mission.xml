@@ -8,7 +8,7 @@
     android:background="@color/back"
     tools:context=".Fragments.Mission.Detail_mission">
 
-    <com.melnykov.fab.ObservableScrollView
+    <ScrollView
         android:id="@+id/scroll_view1"
         android:layout_marginTop="4dp"
         android:layout_width="match_parent"
@@ -93,7 +93,7 @@
 
 
         </LinearLayout>
-    </com.melnykov.fab.ObservableScrollView>
+    </ScrollView>
 
     <RelativeLayout
         android:id="@+id/list"
