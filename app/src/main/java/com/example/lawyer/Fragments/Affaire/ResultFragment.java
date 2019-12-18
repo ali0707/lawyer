@@ -14,8 +14,9 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.lawyer.Fragments.Demande.Add_demande;
 import com.example.lawyer.Fragments.Demande.Demande;
-import com.example.lawyer.Fragments.Mission.Add_Mission;
+import com.example.lawyer.Fragments.Mission.Add_mission;
 import com.example.lawyer.Fragments.Mission.Mission;
 import com.example.lawyer.Fragments.Session.Session;
 import com.example.lawyer.Fragments.Session.Add_session;
@@ -135,7 +136,7 @@ public class ResultFragment extends Fragment implements View.OnClickListener {
                         .commit();
             }
         });
-        fabOne.setOnClickListener(new View.OnClickListener() {
+        fabThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Add_session Add_session = new Add_session();
@@ -149,18 +150,18 @@ public class ResultFragment extends Fragment implements View.OnClickListener {
         fabTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Add_Mission Add_Mission = new Add_Mission();
+                Add_demande Add_demande = new Add_demande();
                 getFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.fragment_container , Add_Mission)
+                        .replace(R.id.fragment_container , Add_demande)
                         .addToBackStack(null)
                         .commit();
             }
         });
-        fabThree.setOnClickListener(new View.OnClickListener() {
+        fabOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Add_Mission Add_Mission = new Add_Mission();
+                Add_mission Add_Mission = new Add_mission();
                 getFragmentManager()
                         .beginTransaction()
                         .replace(R.id.fragment_container , Add_Mission)

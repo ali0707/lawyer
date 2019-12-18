@@ -11,8 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/back">
+
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/date_Session"
+            android:inputType="date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
@@ -22,8 +24,7 @@
             android:background="@drawable/ic_textinput"
             android:drawablePadding="5dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="عنوان"
+            android:hint="تاريخ الجلسة"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.609"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +35,7 @@
         <EditText
             android:id="@+id/deg1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
 
             android:layout_marginStart="12dp"
             android:layout_marginTop="10dp"
@@ -46,7 +47,7 @@
             android:inputType="textPersonName"
             android:background="@drawable/ic_textinput"
 
-            android:hint="تاريخ المهمة"
+            android:hint=" موضوع"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -57,95 +58,7 @@
         <EditText
             android:id="@+id/deg3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="12dp"
-            android:drawableLeft="@drawable/more"
-            android:drawableRight="@drawable/ic_place"
-            android:drawablePadding="5dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:background="@drawable/ic_textinput"
-
-            android:hint="عنوان الجهة"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText"
-            android:textColor="@color/colortext"
-            />
-        <EditText
-            android:id="@+id/deg4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="12dp"
-            android:drawableLeft="@drawable/more"
-            android:drawableRight="@drawable/ic_gavel2"
-            android:drawablePadding="5dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:background="@drawable/ic_textinput"
-
-            android:hint="القضية"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText"
-            android:textColor="@color/colortext"
-            />
-        <EditText
-            android:id="@+id/deg5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="12dp"
-            android:drawableLeft="@drawable/more"
-            android:drawableRight="@drawable/ic_view"
-            android:drawablePadding="5dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:background="@drawable/ic_textinput"
-
-            android:hint="نوع المهمة"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText"
-            android:textColor="@color/colortext"
-            /><EditText
-        android:id="@+id/deg6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="12dp"
-        android:drawableLeft="@drawable/more"
-        android:drawableRight="@drawable/ic_addphoto"
-        android:drawablePadding="5dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:background="@drawable/ic_textinput"
-
-        android:hint="الأعمال المطلوبة"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        android:textColor="@color/colortext"
-        />
-
-        <EditText
-            android:id="@+id/deg7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
 
             android:layout_marginStart="12dp"
             android:layout_marginTop="10dp"
@@ -156,7 +69,28 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:background="@drawable/ic_textinput"
-            android:hint="ملاحظات"
+
+            android:hint=" ملاحظة"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            android:textColor="@color/colortext"
+            />
+        <EditText
+            android:id="@+id/deg4"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:drawableLeft="@drawable/more"
+            android:drawableRight="@drawable/ic_gavel2"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/ic_textinput"
+            android:hint="أحكام تحضيرية"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -164,10 +98,8 @@
             android:textColor="@color/colortext"
             />
 
-
-
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button_Session"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="51.5dp"
@@ -181,6 +113,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
 
     </LinearLayout>
 

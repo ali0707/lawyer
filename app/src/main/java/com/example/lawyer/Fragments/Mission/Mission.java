@@ -1,7 +1,5 @@
 package com.example.lawyer.Fragments.Mission;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -13,11 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.lawyer.Adapters.Mission.MissionAdapter;
-import com.example.lawyer.Adapters.Session.SessionAdapter;
-import com.example.lawyer.Fragments.detail_affaire;
 import com.example.lawyer.R;
 import com.example.lawyer.entities.mission;
-import com.example.lawyer.entities.session;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +37,7 @@ public class Mission extends Fragment {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Add_Mission Add_Mission = new Add_Mission();
+                Add_mission Add_Mission = new Add_mission();
                 getFragmentManager()
                         .beginTransaction()
                         .replace(R.id.fragment_container , Add_Mission)
